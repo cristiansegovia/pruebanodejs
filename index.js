@@ -5,7 +5,7 @@ console.log("ingresando a app");
 const PORT= process.env.PORT || 3300
 const server=createServer((req,res)=>{
 	console.log("peticion recibida");
-	res.end("recibida colega");
+	res.send("recibida colega");
 });
 
 server.listen(PORT, function (){
